@@ -7,7 +7,7 @@ import os
 import csv
 
 # Create the file path to read the pyPoll CSV file
-csv_path = os.path.join(r"Resources\election_data.csv")
+csv_path = os.path.join(r"PyPoll\Resources\election_data.csv")
 
 # create empty lists and variables to store data
 ballot_id = []
@@ -72,11 +72,12 @@ print("---------------------------------------\n")
 
 # Create a new folder called analysis in the Working Directory if it does not already exist
 
-if (not os.path.isdir("Analysis")):
-    os.mkdir("Analysis") # https://note.nkmk.me/en/python-os-mkdir-makedirs/#create-a-directory-osmkdir
+if (not os.path.isdir("PyPoll\Analysis")):
+    os.mkdir("PyPoll\Analysis") # https://note.nkmk.me/en/python-os-mkdir-makedirs/#create-a-directory-osmkdir
 
 # Create a filepath for the Analysis
-output_filepath = os.path.join(r"Analysis\election_data_analysis.txt")
+output_filepath = os.path.join(r"PyPoll\Analysis\election_data_analysis.txt")
+                               
 
 # Create and write to the new text file 
 # https://www.freecodecamp.org/news/file-handling-in-python/

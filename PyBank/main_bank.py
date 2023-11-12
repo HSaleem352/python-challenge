@@ -11,7 +11,7 @@ import os
 import csv
 
 # Create the file path to read the pyBank CSV file
-csv_path = os.path.join(r"Resources\budget_data.csv")
+csv_path = os.path.join(r"PyBank\Resources\budget_data.csv")
 
 
 # create empty lists and variables to store data
@@ -95,11 +95,11 @@ for i, j in analysis.items():
 
 # Create a new folder called analysis in the Working Directory if it does not already exist
 
-if (not os.path.isdir("Analysis")):
-    os.mkdir("Analysis") # https://note.nkmk.me/en/python-os-mkdir-makedirs/#create-a-directory-osmkdir
+if (not os.path.isdir("PyBank\Analysis")):
+    os.mkdir("PyBank\Analysis") # https://note.nkmk.me/en/python-os-mkdir-makedirs/#create-a-directory-osmkdir
 
 # Create a filepath for the Analysis
-output_filepath = os.path.join(r"Analysis\budget_data_analysis.txt")
+output_filepath = os.path.join(r"PyBank\Analysis\budget_data_analysis.txt")
 
 # Create and write to the new text file 
 # https://www.freecodecamp.org/news/file-handling-in-python/
