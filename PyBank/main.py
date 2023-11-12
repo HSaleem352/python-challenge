@@ -12,7 +12,7 @@ import csv
 
 # Create the file path to read the pyBank CSV file
 csv_path = os.path.join(r"Resources\budget_data.csv")
-#bank_csv = r'Resources\budget_data.csv'
+
 
 # create empty lists and variables to store data
 date = []
@@ -43,10 +43,9 @@ with open(csv_path) as bankcsv:
     months = len(date)
 
     # Getting the net Total amount 
-
+    # https://stackoverflow.com/questions/14555263/print-the-sum-of-a-list-of-integers-without-using-sum
     for i in Profit_Loss:
-        total_net += i    # https://stackoverflow.com/questions/14555263/print-the-sum-of-a-list-of-integers-without-using-sum
-
+        total_net += i    
 
     # Getting the total changes over the entire period  
     for j in range(1,len(Profit_Loss)):
@@ -66,7 +65,7 @@ with open(csv_path) as bankcsv:
         if profit_increase < l:
             profit_increase = l
             in_index = total_changes.index(profit_increase) + 1 # Have to add 1 because the changes list is 1 index smaller than the original dates
-    #print(date[in_index]) 
+    
 
     # Getting the greatest Decrease in Profits
     profit_decrease = total_changes[0]
@@ -74,7 +73,7 @@ with open(csv_path) as bankcsv:
         if profit_decrease > m:
             profit_decrease = m
             de_index = total_changes.index(profit_decrease) + 1 # Have to add 1 because the changes list is 1 index smaller than the original dates     
-    #print(date[de_index])   
+       
 
 # Creating a dictionary for clean print and write 
 analysis = {
@@ -100,7 +99,7 @@ if (not os.path.isdir("Analysis")):
     os.mkdir("Analysis") # https://note.nkmk.me/en/python-os-mkdir-makedirs/#create-a-directory-osmkdir
 
 # Create a filepath for the Analysis
-output_filepath = os.path.join(r"Analysis\budget_data.txt")
+output_filepath = os.path.join(r"Analysis\budget_data_analysis.txt")
 
 # Create and write to the new text file 
 # https://www.freecodecamp.org/news/file-handling-in-python/
