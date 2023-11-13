@@ -1,4 +1,13 @@
+# ---------------------------------------------------------------------------
+# Author: Hamza Saleem
+# Instructor: Piro Dhimitri 
+# ---------------------------------------------------------------------------
+
 # This is the main script to analyze the CSV file for the PyPoll Challenge 
+# The CSV filepath has been set relative to Python-Challenge as the working directory
+# Therefore in order for the code to run smoothly, kindly have the working directory set as PYTHON-CHALLENGE
+
+# References used in this code:
 # 1 - https://docs.python.org/3/tutorial/datastructures.html
 
 

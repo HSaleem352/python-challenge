@@ -1,9 +1,17 @@
+# ---------------------------------------------------------------------------
+# Author: Hamza Saleem
+# Instructor: Piro Dhimitri 
+# ---------------------------------------------------------------------------
+
 # This is the main script to analyze the CSV file for the PyBank Challenge 
+# The CSV filepath has been set relative to Python-Challenge as the working directory
+# Therefore in order for the code to run smoothly, kindly have the working directory set as PYTHON-CHALLENGE
+
+# References used in this code:
 # 1 - https://stackoverflow.com/questions/14555263/print-the-sum-of-a-list-of-integers-without-using-sum
 # 2 - https://note.nkmk.me/en/python-os-mkdir-makedirs/#create-a-directory-osmkdir
 # 3 - https://www.freecodecamp.org/news/file-handling-in-python/
 # 4 - https://docs.python.org/3/tutorial/datastructures.html 
-# 5 - https://www.freecodecamp.org/news/print-newline-in-python/ 
 
 
 # Import the modules to work on the csv file and to navigate in the OS
@@ -89,7 +97,7 @@ print("Financial Analysis\n")
 print("---------------------------------------\n")
 # https://docs.python.org/3/tutorial/datastructures.html
 # Create a for loop for every key value and the value it holds. i will hold the key value item and j will hold the value of the item 
-# the items() is a method for dictionaries that takes no parameters and returns the key and avlue pair in a tuple 
+# the items() is a method for dictionaries that takes no parameters and returns the key and value pair in a tuple 
 for i, j in analysis.items():
    print(f"{i}: {j} \n")
 
